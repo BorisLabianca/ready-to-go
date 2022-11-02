@@ -1,10 +1,12 @@
 import { useState } from "react";
 import "./App.css";
+import Switch from "./components/Switch";
 
 function App() {
   const [boolTop, setBoolTop] = useState(false);
   const [boolMid, setBoolMid] = useState(false);
   const [boolBot, setBoolBot] = useState(false);
+  // const [bool, setBool] = useState(false);
   return (
     <div className="App">
       <header>
@@ -13,7 +15,7 @@ function App() {
       </header>
       <main>
         <div className="buttons">
-          <div className="top-buttons">
+          {/* <div className="top-buttons">
             <button
               onClick={() => {
                 boolTop === false && setBoolTop(!boolTop);
@@ -66,9 +68,23 @@ function App() {
             >
               OFF
             </button>
-          </div>
+          </div> */}
+          <Switch className="boolTop" bool={boolTop} setBool={setBoolTop} />
+          <Switch className="boolMid" bool={boolMid} setBool={setBoolMid} />
+          <Switch className="boolBot" bool={boolBot} setBool={setBoolBot} />
         </div>
         <div className="disp-message">
+          {/* <div
+            className={
+              boolBot === true && boolMid === true && boolTop === true
+                ? "go"
+                : "no-way"
+            }
+          >
+            {boolBot === true && boolMid === true && boolTop === true
+              ? "Go!"
+              : "No way!"}
+          </div> */}
           <div
             className={
               boolBot === true && boolMid === true && boolTop === true

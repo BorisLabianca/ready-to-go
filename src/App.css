@@ -29,7 +29,7 @@ header span {
 }
 main {
   display: flex;
-  gap: 451px;
+  gap: 350px;
   align-items: center;
 }
 .notPushed {
@@ -61,7 +61,7 @@ main {
   flex-direction: column;
   gap: 50px;
 }
-.top-buttons {
+/* .top-buttons {
   display: flex;
   gap: 71px;
 }
@@ -70,6 +70,10 @@ main {
   gap: 71px;
 }
 .bottom-buttons {
+  display: flex;
+  gap: 71px;
+} */
+.switch {
   display: flex;
   gap: 71px;
 }
@@ -85,6 +89,7 @@ main .no-way {
   border-radius: 6px;
   border: 1px solid #908f8f;
   color: white;
+  text-shadow: 0px 0px 4px white, -0px -0px 4px white;
   font-size: 48px;
   font-weight: 600;
   line-height: 58.51px;
@@ -99,6 +104,7 @@ main .go {
   border-radius: 6px;
   border: 1px solid #908f8f;
   color: white;
+  text-shadow: 0px 0px 4px white, -0px -0px 4px white;
   font-size: 48px;
   font-weight: 600;
   line-height: 58.51px;
@@ -117,8 +123,8 @@ main .go {
   width: 250px;
   border-radius: 50%;
   background: red;
-  box-shadow: inset 5px 5px 10px rgb(244, 178, 178),
-    inset -5px -5px 10px rgb(110, 19, 19), 5px 5px 5px rgb(58, 57, 57);
+  box-shadow: inset 5px 5px 20px rgb(244, 178, 178),
+    inset -5px -5px 20px rgb(110, 19, 19), 5px 5px 5px rgb(58, 57, 57);
 }
 .reset-btn:active {
   transform: translateY(5px);
