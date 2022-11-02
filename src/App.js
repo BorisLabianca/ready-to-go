@@ -80,6 +80,16 @@ function App() {
               ? "Go!"
               : "No way!"}
           </div>
+          <div
+            onClick={() => {
+              setBoolBot(false);
+              setBoolMid(false);
+              setBoolTop(false);
+            }}
+            className="reset-btn"
+          >
+            STOP!
+          </div>
         </div>
       </main>
       <footer>

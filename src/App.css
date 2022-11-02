@@ -73,6 +73,11 @@ main {
   display: flex;
   gap: 71px;
 }
+.disp-message {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
 main .no-way {
   height: 145.83px;
   width: 250px;
@@ -101,7 +106,25 @@ main .go {
   align-items: center;
   justify-content: center;
 }
-
+.reset-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: red;
+  box-shadow: inset 5px 5px 10px rgb(244, 178, 178),
+    inset -5px -5px 10px rgb(110, 19, 19), 5px 5px 5px rgb(58, 57, 57);
+}
+.reset-btn:active {
+  transform: translateY(5px);
+  box-shadow: inset 5px 5px 10px rgb(244, 178, 178),
+    inset -5px -5px 10px rgb(110, 19, 19);
+}
 footer {
   text-align: center;
 }
